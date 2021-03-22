@@ -1,0 +1,44 @@
+body{
+  background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1,
+h2{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+ul{
+  list-style: none;
+}
+
+p{
+  color: hsl(0, 0%, 59%);
+}
+
+/* Card */
+.card{
+  width: fit-content;
+  background-color: whitesmoke;
+  border-radius: 25px;
+  margin: 25% auto;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Stats */
+.stats{
+  width: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
