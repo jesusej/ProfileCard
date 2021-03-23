@@ -13,18 +13,59 @@ h2{
 
 ul{
   list-style: none;
+  padding: 0;
 }
 
 p{
   color: hsl(0, 0%, 59%);
 }
 
+hr{
+  width: 323px;
+  opacity: 0.3;
+}
+
 /* Card */
 .card{
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
   background-color: whitesmoke;
-  border-radius: 25px;
+  background-position: top left;
+  border-radius: 15px;
   margin: 25% auto;
+}
+
+.profilePicture{
+  border-radius: 96px;
+  border-color: whitesmoke;
+  border-style: solid;
+  border-width: 5px;
+  width: 96px;
+  margin: auto;
+  margin-top: 92px;
+}
+
+/* Title */
+
+.title{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 135px;
+}
+
+.title h1, .title p{
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.state{
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 17px;
 }
 
 .content{
@@ -34,10 +75,22 @@ p{
 
 /* Stats */
 .stats{
-  width: min-content;
+  padding: 1em 0 1.2em;
+  width: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.stats h2, .stats p{
+  margin: 0;
+}
+
+.stats p{
+  font-size: 12px;
+  padding-top: 5px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
