@@ -7,7 +7,14 @@ body{
   text-align: center;
   background-position-x: -765px, 130px; background-position-y: -600px, 300px;
 }
-/*768*/
+
+/*  Background circles for PC */
+
+@media screen and (min-width: 967px){
+  body{
+    background-position-x: -280px, 700px; background-position-y: -520px, 350px;
+  }
+}
 
 h1,
 h2{
@@ -55,7 +62,7 @@ hr{
   margin-top: 92px;
 }
 
-/* Title */
+/* Under Pictures */
 
 .title{
   margin: auto;
@@ -75,7 +82,7 @@ hr{
 
 .state{
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 17px;
 }
 
