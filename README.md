@@ -62,7 +62,7 @@ The card part was easy for me. I really liked how everything fitted and I was re
   }
 ```
 
-Also I used used `background-image` for the card and it turned out to be better that I expectd (I originally wanted to use a normal image for the card by HTMl and it didn't work well).
+Also I used used `background-image` for the card and it turned out to be better that I expected (I originally wanted to use a normal image for the card by HTMl and it didn't work well).
 
 ```css 
   .card{
