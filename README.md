@@ -36,7 +36,7 @@ Thank you for checking this solution! If you don't know what I'm talking about, 
 
 Here you can try the live site or give me a comment!
 - [Live Site](https://thenutscout.github.io/ProfileCard/)
-- Solution: Not ready by the moment
+- [Solution](https://www.frontendmentor.io/solutions/profile-card-component-solution-using-flexbox-center-and-mobile-first-mFRBIV_9R)
 
 ## My process
 
