@@ -1,9 +1,14 @@
 body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background-color: hsl(185, 75%, 39%);
   background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat no-repeat;
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 18px;
+  font-size: 1.15em;
   text-align: center;
   background-position-x: -765px, 130px; background-position-y: -600px, 300px;
 }
@@ -19,12 +24,13 @@ body{
 h1,
 h2{
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.15rem;
 }
 
 ul{
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 p{
@@ -40,6 +46,9 @@ hr{
 .card{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   width: 325px;
   background-image: url("../images/bg-pattern-card.svg");
   background-size: 100%;
@@ -48,8 +57,14 @@ hr{
   background-position: top center;
   background-size: 375px;
   border-radius: 15px;
-  margin: 20vh auto;
+  margin: 20vh 0;
   box-shadow: 0 50px 30px rgba(45,50,72, 0.15);
+}
+
+@media screen and (min-width: 967px){
+  .card{
+    width: 340px;
+  }
 }
 
 .profilePicture{
@@ -58,22 +73,20 @@ hr{
   border-style: solid;
   border-width: 5px;
   width: 96px;
-  margin: auto;
-  margin-top: 92px;
+  margin-top: 5.2em;
 }
 
 /* Under Pictures */
 
 .title{
-  margin: auto;
   display: flex;
   justify-content: space-between;
   width: 135px;
 }
 
 .title h1, .title p{
-  margin-top: 25px;
-  margin-bottom: 0;
+  margin-top: 1.36em;
+  margin-bottom: 0.3em;
 }
 
 .title p, .state{
@@ -81,14 +94,16 @@ hr{
 }
 
 .state{
-  font-size: 15px;
-  margin-top: 5px;
-  margin-bottom: 17px;
+  font-size: 0.83em;
+  margin-top: 0.33em;
+  margin-bottom: 1.114em;
 }
 
 .content{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Stats */
@@ -98,8 +113,6 @@ hr{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
-  margin-bottom: 0;
 }
 
 .stats h2, .stats p{
@@ -107,12 +120,11 @@ hr{
 }
 
 .stats p{
-  font-size: 12px;
+  font-size: 0.76em;
   padding-top: 5px;
 }
 
 footer {
   font-size: 11px;
-  margin: auto; 
 }
 footer a { color: hsl(228, 45%, 44%); }
