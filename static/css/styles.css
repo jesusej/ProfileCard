@@ -85,7 +85,7 @@ hr{
 }
 
 .title h1, .title p{
-  margin-top: 1.36em;
+  margin-top: 1.20em;
   margin-bottom: 0.3em;
 }
 
@@ -94,7 +94,7 @@ hr{
 }
 
 .state{
-  font-size: 0.83em;
+  font-size: 0.79em;
   margin-top: 0.33em;
   margin-bottom: 1.114em;
 }
@@ -120,7 +120,7 @@ hr{
 }
 
 .stats p{
-  font-size: 0.76em;
+  font-size: 0.7em;
   padding-top: 5px;
 }
 
