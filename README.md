@@ -1,87 +1,94 @@
-# Frontend Mentor - Profile card component
+# Profile card component solution with HTML and CSS using Flexbox centering and mobile first
 
-![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Huddle landing page with single introductory section](./static/design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Hello! 👋
 
-Thanks for checking out this front-end coding challenge.
+Thank you for checking this solution! If you don't know what I'm talking about, this is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). This is my second Front-End Mentor Challenge by now and first one that I'm starting without a tutorial so I guess that's progress (yay!)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Table of contents
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## The challenge
+## Overview
 
-Your challenge is to build out this profile card component and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Build out the project to the designs provided
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+#### Desktop:
+![DesktopScreenshot](./static/screenshots/Desktop.png)
+#### Mobile:
+![MobileScreenshot](./static/screenshots/Mobile.png)
+### Links
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+Here you can try the live site or give me a comment!
+- [Live Site](https://thenutscout.github.io/ProfileCard/)
+- Solution: Not ready by the moment
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## My process
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Built with
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [Normalize](https://necolas.github.io/normalize.css/)
+- [Kumbh Sans from Google Fonts](https://fonts.google.com/specimen/Kumbh+Sans)
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### What I learned
 
-## Building your project
+The card part was easy for me. I really liked how everything fitted and I was really proud of me. The hard thing, again, were the backgrounds. It really caught me off guard the fact that I had to use TWO vectors for the background instead of one vector like the [Huddle landing page challenge](https://github.com/thenutscout/HuddlePage). But then I found out (thanks to a comment in a solution I checked out) that I can use the two backgrounds at the same time and that blow my mind at that moment. So I tried it and it worked!
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+```css 
+  body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat no-repeat;
+    background-position-x: -765px, 130px; background-position-y: -600px, 300px;
+  }
+```
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Also I used used `background-image` for the card and it turned out to be better that I expectd (I originally wanted to use a normal image for the card by HTMl and it didn't work well).
 
-## Deploying your project
+```css 
+  .card{
+    background-image: url("../images/bg-pattern-card.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    background-position: top center;
+  }
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### Continued development
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Even though I liked the final result of the backgrounds in the specified dimensions of the design images, I didn't liked how it turned out out of those dimentions. For mobile there's not a big problem, but what about a bigger screen? I tried changing the units for the backgrounds x-y positions for vh, vw and even percentages but I didn't liked the result so I went back to pixels. I'm thinking the problem is not only the units but also the sizing for the background vectors so I want to check those details too.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Useful resources
 
-## Create a custom `README.md`
+- [Yusuf's solution](https://www.frontendmentor.io/solutions/profile-card-component-zjqEBbaoe) - A big thank you for @YusufWebDev and @hire-blac !! They really helped me in the issue with the background and other things I had doubts. I could never be more gratefull for that little help from both of you!!
+- [Mozilla developer](https://developer.mozilla.org/en-US/docs/Web/CSS) - This helped me searching in some css doubts that I had while working on this project. It's very complete (even helping me in other coding stuff like JS) so I recommend to check it.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+## Author
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+By the moment my only contact that I give is my Frontend Mentor account, here you can know a little about me and check the other solutions that I will upload:
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- Frontend Mentor - [@thenutscout](https://www.frontendmentor.io/profile/thenutscout)
 
-## Submitting your solution
+## Acknowledgments
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+And here we are at the end! I really liked this challenge so I want to first thank Frontend Mentor to create this challenge. Also I want to thank Algoritmia Club GDA (Dev George) which you can check their page [here](https://www.algoritmia-gda.club) (only in spanish) and my friends Pedro and Alex, because if it wasn't by them I wouldn't be trying to know more about this world of Web Developing. At the end but not less important I want to thank **YOU** for taking the time to check this solution and read this loooooooooooooong README. I hope you like what you see and wish you a nice coding!
